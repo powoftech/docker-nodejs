@@ -28,7 +28,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-      env:
-          PORT: ${{ secrets.PORT }}
     - run: npm run build --if-present
     - run: npm test
+      env:
+          PORT: ${{ secrets.PORT }}
