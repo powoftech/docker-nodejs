@@ -10,7 +10,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ message: "Docker is easy 🐋🐳" });
+    res.json({ message: "Docker is easy 🐋🐳" });
 });
 
 app.use(notFoundHandler, errorHandler);
